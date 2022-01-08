@@ -1,24 +1,16 @@
-import logo from './logo.svg';
+import 'antd/dist/antd.min.css';
 import './App.css';
-
+import Certificate from './components/Certificate';
+import Certificate2 from './components/Certificate-1';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Certificate} />
+        <Route exact path="/certificado-2" component={Certificate2} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
