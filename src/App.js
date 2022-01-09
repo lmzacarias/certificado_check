@@ -3,6 +3,9 @@ import './App.css';
 import Certificate from './components/Certificate';
 import Certificate2 from './components/Certificate-1';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import moment from 'moment';
+import 'moment/locale/es';
+moment.locale('es');
 function App() {
   return (
     <BrowserRouter>
