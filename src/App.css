@@ -10,6 +10,7 @@
 
 .image-resposive {
   width: 100%;
+  object-fit: contain;
   aspect-ratio: 16/9;
 }
 
@@ -18,9 +19,8 @@
 }
 
 .width-60 {
-  padding: 20px 20px 0px 20px;
+  /* padding: 40px; */
   width: 75%;
-  margin-right: 60px 60px 0px 60px;
 }
 
 .description-cotainer {
@@ -75,7 +75,6 @@
     padding: 20px;
     width: 100%;
   }
-
   
   .flex-container-row {
     display: flex;

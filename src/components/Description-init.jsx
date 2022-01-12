@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Alert, Timeline, Button } from 'antd';
 import moment from 'moment';
+
 import { DownloadOutlined, CheckOutlined } from '@ant-design/icons';
 import document from '../img/document.gif';
-
 const Description = () => {
   const [time, settime] = useState(0);
   const [timeNow, settimeNow] = useState(moment().format('YYYY-MM-DD, HH:mm A'));
@@ -47,19 +47,22 @@ const Description = () => {
             reverse={false}
             className={`${time >= 4 ? 'display-none' : ''}`}
           ></Timeline>
-           <Timeline.Item
+          <Timeline.Item
             color="green"
             dot={<CheckOutlined style={{ fontSize: '16px' }} />}
             className={`${time >= 4 ? '' : 'display-none'}`}
-          >Verificado</Timeline.Item>
+          >
+            Verificado
+          </Timeline.Item>
           <Timeline.Item className={`${time >= 1 ? '' : 'display-none'}`}>
             Jenny Lucia Sandoval
           </Timeline.Item>
           <Timeline.Item className={`${time >= 2 ? '' : 'display-none'}`}>
-            DISEÑO DE INTERIORES 4 MÓDULOS
+            Experto en la representación, el Diseño 3D y la Visualización
+            Arquitectónico.
           </Timeline.Item>
           <Timeline.Item className={`${time >= 3 ? '' : 'display-none'}`}>
-            Fecha de aprobación: 2020-07-30
+            Fecha de aprobación: 2022-01-05
           </Timeline.Item>
           <Timeline.Item className={`${time >= 4 ? '' : 'display-none'}`}>
             Fecha de validación: {timeNow}
@@ -70,7 +73,7 @@ const Description = () => {
         <div className="d-f">
           {' '}
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/jenny-sandoval.appspot.com/o/qr-2--certificado.jpg?alt=media&token=a81b4a35-e777-42ce-86bb-d53663b45df7"
+            src="https://firebasestorage.googleapis.com/v0/b/jenny-sandoval.appspot.com/o/qr-1--certificado.jpg?alt=media&token=bc517fc4-0af3-4a7d-9ba8-9346cb928291"
             alt="Logo"
             className="image-qr"
             style={{ width: '50%', marginBottom: '20px' }}
@@ -88,7 +91,7 @@ const Description = () => {
           type="primary"
           icon={<DownloadOutlined />}
           className={`${time >= 4 ? '' : 'display-none'}`}
-          href="https://firebasestorage.googleapis.com/v0/b/jenny-sandoval.appspot.com/o/Jenny%20Sandoval%20DISE%C3%91O%20DE%20INTERIORES.pdf?alt=media&token=fb002f86-dd83-4356-bc7b-7981e7c0d542"
+          href="https://firebasestorage.googleapis.com/v0/b/jenny-sandoval.appspot.com/o/Jenny%20Sandoval%20-%20UDEMY.pdf?alt=media&token=465b2134-15db-4aaf-bd72-9c5b80985f45"
           target="_blank"
         >
           Download

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Alert, Timeline, Button } from 'antd';
 import moment from 'moment';
-import { DownloadOutlined } from '@ant-design/icons';
+import { DownloadOutlined, CheckOutlined } from '@ant-design/icons';
 import document from '../img/document.gif';
-import qr from '../img/qr-modelado.jpg';
 
 const Description = () => {
   const [time, settime] = useState(0);
-  const [timeNow, settimeNow] = useState(moment().format('YYYY-MM-DD'));
+  const [timeNow, settimeNow] = useState(moment().format('YYYY-MM-DD, HH:mm A'));
 
   useEffect(() => {
     setTimeout(() => {
@@ -48,6 +47,11 @@ const Description = () => {
             reverse={false}
             className={`${time >= 4 ? 'display-none' : ''}`}
           ></Timeline>
+           <Timeline.Item
+            color="green"
+            dot={<CheckOutlined style={{ fontSize: '16px' }} />}
+            className={`${time >= 4 ? '' : 'display-none'}`}
+          >Verificado</Timeline.Item>
           <Timeline.Item className={`${time >= 1 ? '' : 'display-none'}`}>
             Jenny Lucia Sandoval
           </Timeline.Item>
@@ -66,7 +70,7 @@ const Description = () => {
         <div className="d-f">
           {' '}
           <img
-            src={qr}
+            src="https://firebasestorage.googleapis.com/v0/b/jenny-sandoval.appspot.com/o/qr-3--certificado.jpg?alt=media&token=8a312d06-ca70-4c25-b770-eac2506fc87f"
             alt="Logo"
             className="image-qr"
             style={{ width: '50%', marginBottom: '20px' }}
@@ -84,7 +88,7 @@ const Description = () => {
           type="primary"
           icon={<DownloadOutlined />}
           className={`${time >= 4 ? '' : 'display-none'}`}
-          href="https://firebasestorage.googleapis.com/v0/b/jenny-sandoval.appspot.com/o/certi-jenny-sandoval-convertido.pdf?alt=media&token=8fe1a143-1aa9-4526-8d3b-6e82f3544675"
+          href="https://firebasestorage.googleapis.com/v0/b/jenny-sandoval.appspot.com/o/Jenny%20Sandoval%20MODELADO%20Y%20ANIMACI%C3%93N.pdf?alt=media&token=a03e0a5f-9c9d-4a7a-95d3-388a6cd420ac"
           target="_blank"
         >
           Download
