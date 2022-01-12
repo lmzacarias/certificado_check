@@ -1,6 +1,6 @@
 import React from 'react';
-import certi from '../img/cert-jenny-sandoval.jpg';
-import Description from './Description';
+import certi from '../img/animacion-certi.jpg';
+import Description from './Desc';
 const Certificate = () => {
   return (
     <div className="flex-container-row">

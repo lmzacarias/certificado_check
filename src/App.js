@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Certificate} />
-        <Route exact path="/certificado-2" component={Certificate2} />
+        <Route exact path="/certificado-61dd8b35d0e6srf883ba1b428" component={Certificate} />
+        <Route exact path="/certificado-61dd8b35d0e62f883ba1b428" component={Certificate2} />
       </Switch>
     </BrowserRouter>
   );

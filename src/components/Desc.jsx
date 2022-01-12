@@ -3,7 +3,7 @@ import { Alert, Timeline, Button } from 'antd';
 import moment from 'moment';
 import { DownloadOutlined } from '@ant-design/icons';
 import document from '../img/document.gif';
-import qr from '../img/qr-diseno.jpg';
+import qr from '../img/qr-modelado.jpg';
 
 const Description = () => {
   const [time, settime] = useState(0);
@@ -37,7 +37,7 @@ const Description = () => {
         <div>
           <span> Jenny Lucia Sandoval</span>
           <br />
-          <span className="color-text"> Diseño de interiores 4 módulos</span>
+          <span className="color-text"> Modelado y animación Revit 2020 + Lumion 9</span>
         </div>
       </div>
 
@@ -52,10 +52,10 @@ const Description = () => {
             Jenny Lucia Sandoval
           </Timeline.Item>
           <Timeline.Item className={`${time >= 2 ? '' : 'display-none'}`}>
-            DISEÑO DE INTERIORES 4 MÓDULOS
+          Modelado y animación Revit + Lumion
           </Timeline.Item>
           <Timeline.Item className={`${time >= 3 ? '' : 'display-none'}`}>
-            Fecha de aprobación: 2020-07-30
+            Fecha de aprobación: 2020-09-13
           </Timeline.Item>
           <Timeline.Item className={`${time >= 4 ? '' : 'display-none'}`}>
             Fecha de validación: {timeNow}
